@@ -1,0 +1,86 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WORLD INDEX Daily Tip 2026-11-24</title>
+<style>
+:root{--bg:#ffffff;--ink:#111;--ink2:#444;--muted:#767676;--grid:#e6e6e6;--band:#f3f3f3;--blue:#2a78d6;
+--crit:#d03b3b;--ser:#ec835a;--warn:#fab219;--good:#0ca30c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",-apple-system,"Malgun Gothic",sans-serif;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:980px;margin:0 auto;padding:28px 16px 48px}
+h1{font-size:22px;margin:0;letter-spacing:.02em}
+h2{font-size:17px;margin:34px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+.top{display:flex;justify-content:space-between;align-items:baseline;background:#111;color:#fff;padding:14px 16px}
+.top h1{font-size:24px}
+.top .date{color:#fff}
+.date{font-size:16px}
+.hero{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;margin:26px 0 8px}
+.score{font-size:72px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.band{font-size:22px;font-weight:700}
+.delta{font-size:15px;color:var(--ink2)}
+.small{font-size:12.5px;color:var(--muted)}
+.stats{font-size:13.5px;color:var(--ink2);text-align:right}
+.stats b{font-size:16px;color:var(--ink)}
+.gauge{position:relative;display:flex;gap:2px;margin:22px 0 4px}
+.gauge div{flex:0 0 auto;height:26px;font-size:12.5px;display:flex;align-items:center;justify-content:center;color:#222}
+.gauge .mk{position:absolute;top:-20px;transform:translateX(-50%);font-size:12px;font-weight:700}
+.ticks{position:relative;height:16px;font-size:11px;color:var(--muted)}
+.ticks span{position:absolute;transform:translateX(-50%)}
+.ticks span:first-child{transform:none}.ticks span:last-child{transform:translateX(-100%)}
+.chart svg{width:100%;height:auto;display:block}
+.wbar{display:flex;gap:2px;height:30px;margin:6px 0}
+.wbar div{font-size:11px;display:flex;align-items:center;justify-content:center;color:#111;overflow:hidden;white-space:nowrap}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:840px;font-variant-numeric:tabular-nums}
+th{white-space:nowrap;font-size:12.5px;font-weight:500;color:var(--muted);text-align:left;padding:6px 6px;border-bottom:1px solid var(--ink2)}
+td{padding:7px 6px;border-bottom:1px solid var(--grid);vertical-align:middle;white-space:nowrap}
+td.note{white-space:normal}
+td.id{color:var(--muted);font-size:12px;width:34px}
+td.num,th.num{text-align:right;white-space:nowrap}
+td.obs{color:var(--muted);font-size:12px;white-space:nowrap}
+.dv{font-size:11.5px;color:var(--ink2);line-height:1.2}
+.ds{font-size:11.5px;color:var(--ink2);font-weight:400}
+.mv{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13.5px;margin-top:8px}
+.mv b{font-variant-numeric:tabular-nums}
+tr.sec td{background:var(--band);font-weight:700;padding:9px 8px;border-bottom:none}
+tr.sec.kr td{background:#111;color:#fff}
+tr.sec td span{float:right;font-weight:400;font-size:12.5px}
+.sbar{display:inline-block;width:80px;height:10px;background:var(--grid);vertical-align:middle;margin-right:8px}
+.sbar i{display:block;height:100%}
+.rng{position:relative;width:110px;height:22px}
+.rng .ln{position:absolute;top:6px;left:0;right:0;height:4px;background:var(--grid);border-radius:2px}
+.rng .dt{position:absolute;top:3px;width:10px;height:10px;border-radius:50%;background:#111;transform:translateX(-50%)}
+.rng .lo,.rng .hi{position:absolute;top:11px;font-size:10.5px;color:var(--muted)}
+.rng .hi{right:0}
+td.note{font-size:13px;color:var(--ink2)}
+ul.ev{list-style:none;padding:0;margin:0}
+ul.ev li{display:flex;gap:10px;padding:7px 0;border-bottom:1px solid var(--grid)}
+ul.ev .c{color:var(--muted);font-size:12px;width:28px;flex:none;padding-top:2px}
+ul.ev .s{margin-left:auto;color:var(--muted);font-size:12.5px;white-space:nowrap;padding-left:12px}
+dl.desc{display:grid;grid-template-columns:240px 1fr;gap:0;margin:0}
+dl.desc dt,dl.desc dd{padding:9px 0;border-bottom:1px solid var(--grid);margin:0}
+dl.desc dt{font-weight:700;font-size:14.5px}
+dl.desc dt small{color:var(--muted);font-weight:400;margin-right:8px}
+dl.desc dd{color:var(--ink2);font-size:14px}
+dl.desc .kr{grid-column:1/-1;background:#111;color:#fff;font-weight:700;padding:8px 10px;margin-top:14px}
+.guide{display:grid;grid-template-columns:84px 1fr;gap:5px 14px;font-size:13.5px;margin:0;background:#f5f5f5;padding:12px 16px}
+.guide b{font-size:14px}
+.guide div{color:var(--ink2)}
+.foot{margin-top:30px;font-size:12.5px;color:var(--ink2);line-height:1.7;background:#f5f5f5;padding:12px 16px}
+@media (max-width:640px){.hero{grid-template-columns:1fr 1fr}.stats{grid-column:1/-1;text-align:left}.score{font-size:52px}
+dl.desc{grid-template-columns:1fr}dl.desc dt{border-bottom:none;padding-bottom:0}.guide{grid-template-columns:1fr}}
+
+ol.tp{margin:0;padding-left:22px} ol.tp li{padding:8px 0;border-bottom:1px solid var(--grid)} ol.tp li div{color:var(--ink2);font-size:14.5px;margin-top:2px}
+ol.tp .ref{font-size:12.5px;color:var(--muted)} .sum{font-size:16px;line-height:1.7;margin-top:18px}
+.tbl table{min-width:0}</style></head><body><div class="wrap">
+<div class="top"><h1>WORLD INDEX · Daily Tip</h1><div class="date">2026-11-24 (화)</div></div>
+<h2>개요</h2>
+<div class="sum">종합지수 <b style="font-size:22px">29.7</b> / 100 · <b style="color:#ec835a">위험</b> · 전일(11.23) 대비 ▲ 2.1 · 백분위 11%<br>
+<span class="small">미 증시는 11/23 엔비디아 CEO 복귀 발표로 급반등(2025년 이후 최대 일간 상승 보도), 코스피는 11/24 장중 5,000선 회복(매수 사이드카 발동). 이번 주 미국 PCE·GDP(25일), 한은 금통위(26일), 미국 추수감사절 휴장(26일) 예정.</span></div>
+<h2>주목 지표 (자동 선정)</h2>
+<div class="tbl"><table><thead><tr><th></th><th>항목</th><th class="num">현재값 (전일 대비, 관측일)</th><th>상태점수</th><th>선정 사유</th></tr></thead><tbody><tr><td class="id">F4</td><td>전세계 주가 고점대비 낙폭 (ACWI)</td><td class="num">-8.14 % (▲4.10%p, 11.23)</td><td><b style="color:#ec835a">43</b></td><td>상태점수 +37</td></tr><tr><td class="id">G1</td><td>지정학 리스크 (GPR, 7일평균)</td><td class="num">162.3 pt (▲17.3, 11.23)</td><td><b style="color:#d03b3b">21</b></td><td>상태점수 -15</td></tr><tr><td class="id">X4</td><td>기술·사이버·기타 돌발</td><td class="num">판단 항목</td><td><b style="color:#ec835a">37</b></td><td>상태점수 +7</td></tr><tr><td class="id">F1</td><td>주식 공포지수 (VIX)</td><td class="num">35.89 pt (▲7.45, 11.20)</td><td><b style="color:#d03b3b">0</b></td><td>10년 중 최하위 수준</td></tr><tr><td class="id">F5</td><td>미 10년 실질금리 (TIPS)</td><td class="num">2.88 % (–, 11.19)</td><td><b style="color:#d03b3b">1</b></td><td>10년 중 최하위 수준</td></tr><tr><td class="id">E4</td><td>기대인플레이션 (5Y BEI)</td><td class="num">2.18 % (–, 11.20)</td><td><b style="color:#0ca30c">98</b></td><td>10년 중 최상위 수준</td></tr><tr><td class="id">E5</td><td>미 신규실업수당청구</td><td class="num">203.0 K (–, 11.14)</td><td><b style="color:#0ca30c">100</b></td><td>10년 중 최상위 수준</td></tr><tr><td class="id">K2</td><td>코스피 고점대비 낙폭</td><td class="num">-48.34 % (▼1.77%p, 11.23)</td><td><b style="color:#d03b3b">0</b></td><td>10년 중 최하위 수준</td></tr><tr><td class="id">K4</td><td>수출 증가율 (전년동월비)</td><td class="num">84.74 % (–, 09.01)</td><td><b style="color:#0ca30c">100</b></td><td>10년 중 최상위 수준</td></tr></tbody></table></div>
+<div class="small" style="margin-top:6px">선정 기준: 상태점수 전일 대비 ±5 이상 변동, 또는 상태점수 10 이하·95 이상</div>
+<h2>유의 사항</h2><ol class="tp"><li><b>주가 반등의 지속 여부</b><div>전세계 주가 낙폭 상태점수 +37은 11/23 미국 장중 값 기준. 반등이 2거래일 이상 유지되는지, VIX(11/20 기준 35.89)가 30 아래로 내려오는지 확인.</div><div class="ref">관련 지표: F1 주식 공포지수, F4 전세계 주가 고점대비 낙폭</div></li><li><b>국내 증시 등락 폭 확대</b><div>코스피 11/23 −3.31%(4,708.54), 11/24 장중 6~7% 상승. 이틀 연속 사이드카 발동. 고점 대비 −48% 수준으로 일간 변동 폭이 큰 구간. 정부 증시안정펀드 실제 가동 여부 확인.</div><div class="ref">관련 지표: K2 코스피 고점대비 낙폭, K8 한반도·국내 정책</div></li><li><b>금리 인상 경로</b><div>26일 금통위 기준금리 0.25%p 인상(3.25%) 전망 우세(보도). 미 10년 실질금리 2.88%로 최근 10년 최고 수준 유지. 25일 미국 PCE 물가가 12월 연준 결정 전망에 영향.</div><div class="ref">관련 지표: K3 CD금리, F5 미 10년 실질금리</div></li><li><b>환율</b><div>원/달러 11/23 1,345.9원 마감, 장중 1,350원 돌파. 위험회피 완화 시 하락 여부 확인.</div><div class="ref">관련 지표: K1 원/달러 환율</div></li><li><b>에너지 가격</b><div>브렌트유 87달러 부근, 3개월 저점 수준(공급 증가 보도). 호르무즈 해협 공격은 최고 수준 지속. 미 EIA는 해협 재개 후에도 연료 가격 상승이 수개월 지속될 수 있다고 언급.</div><div class="ref">관련 지표: E1 국제유가, X1 무력분쟁·안보</div></li></ol>
+<h2>주요 일정</h2><div class="tbl"><table><thead><tr><th>일자</th><th>일정</th><th>비고</th></tr></thead><tbody><tr><td class="obs" style="font-size:13.5px;color:#111">11/25(수) 미국</td><td>3분기 GDP, 10월 PCE 물가 발표</td><td class="note">한국시각 25일 밤. 12월 연준 결정 전 주요 물가 지표</td></tr><tr><td class="obs" style="font-size:13.5px;color:#111">11/26(목)</td><td>한국은행 금융통화위원회 기준금리 결정</td><td class="note">3.25% 인상 전망 우세(보도)</td></tr><tr><td class="obs" style="font-size:13.5px;color:#111">11/26(목) 미국</td><td>추수감사절, 미국 증시 휴장</td><td class="note">27일(금)은 조기 폐장</td></tr><tr><td class="obs" style="font-size:13.5px;color:#111">11/27(금) 미국</td><td>블랙프라이데이</td><td class="note">해외 직구 결제 집중 기간</td></tr><tr><td class="obs" style="font-size:13.5px;color:#111">12/1(화)</td><td>11월 수출입동향 발표(산업통상자원부)</td><td class="note">K4 수출 증가율 관련</td></tr><tr><td class="obs" style="font-size:13.5px;color:#111">이번 주</td><td>금융위원회 디지털자산기본법 정부안 공개</td><td class="note">보도 기준</td></tr></tbody></table></div>
+<h2>점검·준비 사항</h2><ol class="tp"><li><b>변동금리 대출</b><div>금리 재산정 주기와 기준금리(CD·코픽스) 확인. 기준금리 0.25%p 인상이 대출금리에 그대로 반영될 경우 대출 1억 원당 연 이자 약 25만 원 증가(단순 계산).</div></li><li><b>해외 결제</b><div>블랙프라이데이 해외 직구·여행 결제 시 카드 청구 환율은 결제일이 아닌 카드사 매입 시점 환율이 적용됨(통상 결제 후 수일). 환율 변동 폭이 큰 기간이므로 청구 금액 확인.</div></li><li><b>연금·투자 계좌</b><div>단기 급등락 구간. 정해 둔 자산배분 비율과 현재 비율의 차이 확인(매매 권유 아님).</div></li><li><b>개인정보 유출 대응</b><div>한국전력 고객 정보 최대 152만 건 유출 보도(주민등록번호·계좌·카드번호 포함 보도). 한전ON 이용 여부 확인, 카드 재발급·이상거래 알림 설정 점검, 한전 사칭 문자·전화 주의.</div></li></ol>
+<div class="foot">작성 기준: 2026-11-24 WORLD INDEX(수집 2026-11-24 02:33 KST) 및 최근 48시간 보도. 일정은 보도 기준이며 변경될 수 있음.<br>
+정보 제공 목적이며 투자 권유가 아님. 개별 금융상품의 매수·매도 판단 근거로 사용하지 않음.</div>
+</div></body></html>
