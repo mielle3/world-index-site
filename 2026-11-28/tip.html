@@ -1,0 +1,86 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WORLD INDEX Daily Tip 2026-11-28</title>
+<style>
+:root{--bg:#ffffff;--ink:#111;--ink2:#444;--muted:#767676;--grid:#e6e6e6;--band:#f3f3f3;--blue:#2a78d6;
+--crit:#d03b3b;--ser:#ec835a;--warn:#fab219;--good:#0ca30c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",-apple-system,"Malgun Gothic",sans-serif;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:980px;margin:0 auto;padding:28px 16px 48px}
+h1{font-size:22px;margin:0;letter-spacing:.02em}
+h2{font-size:17px;margin:34px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+.top{display:flex;justify-content:space-between;align-items:baseline;background:#111;color:#fff;padding:14px 16px}
+.top h1{font-size:24px}
+.top .date{color:#fff}
+.date{font-size:16px}
+.hero{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;margin:26px 0 8px}
+.score{font-size:72px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.band{font-size:22px;font-weight:700}
+.delta{font-size:15px;color:var(--ink2)}
+.small{font-size:12.5px;color:var(--muted)}
+.stats{font-size:13.5px;color:var(--ink2);text-align:right}
+.stats b{font-size:16px;color:var(--ink)}
+.gauge{position:relative;display:flex;gap:2px;margin:22px 0 4px}
+.gauge div{flex:0 0 auto;height:26px;font-size:12.5px;display:flex;align-items:center;justify-content:center;color:#222}
+.gauge .mk{position:absolute;top:-20px;transform:translateX(-50%);font-size:12px;font-weight:700}
+.ticks{position:relative;height:16px;font-size:11px;color:var(--muted)}
+.ticks span{position:absolute;transform:translateX(-50%)}
+.ticks span:first-child{transform:none}.ticks span:last-child{transform:translateX(-100%)}
+.chart svg{width:100%;height:auto;display:block}
+.wbar{display:flex;gap:2px;height:30px;margin:6px 0}
+.wbar div{font-size:11px;display:flex;align-items:center;justify-content:center;color:#111;overflow:hidden;white-space:nowrap}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:840px;font-variant-numeric:tabular-nums}
+th{white-space:nowrap;font-size:12.5px;font-weight:500;color:var(--muted);text-align:left;padding:6px 6px;border-bottom:1px solid var(--ink2)}
+td{padding:7px 6px;border-bottom:1px solid var(--grid);vertical-align:middle;white-space:nowrap}
+td.note{white-space:normal}
+td.id{color:var(--muted);font-size:12px;width:34px}
+td.num,th.num{text-align:right;white-space:nowrap}
+td.obs{color:var(--muted);font-size:12px;white-space:nowrap}
+.dv{font-size:11.5px;color:var(--ink2);line-height:1.2}
+.ds{font-size:11.5px;color:var(--ink2);font-weight:400}
+.mv{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13.5px;margin-top:8px}
+.mv b{font-variant-numeric:tabular-nums}
+tr.sec td{background:var(--band);font-weight:700;padding:9px 8px;border-bottom:none}
+tr.sec.kr td{background:#111;color:#fff}
+tr.sec td span{float:right;font-weight:400;font-size:12.5px}
+.sbar{display:inline-block;width:80px;height:10px;background:var(--grid);vertical-align:middle;margin-right:8px}
+.sbar i{display:block;height:100%}
+.rng{position:relative;width:110px;height:22px}
+.rng .ln{position:absolute;top:6px;left:0;right:0;height:4px;background:var(--grid);border-radius:2px}
+.rng .dt{position:absolute;top:3px;width:10px;height:10px;border-radius:50%;background:#111;transform:translateX(-50%)}
+.rng .lo,.rng .hi{position:absolute;top:11px;font-size:10.5px;color:var(--muted)}
+.rng .hi{right:0}
+td.note{font-size:13px;color:var(--ink2)}
+ul.ev{list-style:none;padding:0;margin:0}
+ul.ev li{display:flex;gap:10px;padding:7px 0;border-bottom:1px solid var(--grid)}
+ul.ev .c{color:var(--muted);font-size:12px;width:28px;flex:none;padding-top:2px}
+ul.ev .s{margin-left:auto;color:var(--muted);font-size:12.5px;white-space:nowrap;padding-left:12px}
+dl.desc{display:grid;grid-template-columns:240px 1fr;gap:0;margin:0}
+dl.desc dt,dl.desc dd{padding:9px 0;border-bottom:1px solid var(--grid);margin:0}
+dl.desc dt{font-weight:700;font-size:14.5px}
+dl.desc dt small{color:var(--muted);font-weight:400;margin-right:8px}
+dl.desc dd{color:var(--ink2);font-size:14px}
+dl.desc .kr{grid-column:1/-1;background:#111;color:#fff;font-weight:700;padding:8px 10px;margin-top:14px}
+.guide{display:grid;grid-template-columns:84px 1fr;gap:5px 14px;font-size:13.5px;margin:0;background:#f5f5f5;padding:12px 16px}
+.guide b{font-size:14px}
+.guide div{color:var(--ink2)}
+.foot{margin-top:30px;font-size:12.5px;color:var(--ink2);line-height:1.7;background:#f5f5f5;padding:12px 16px}
+@media (max-width:640px){.hero{grid-template-columns:1fr 1fr}.stats{grid-column:1/-1;text-align:left}.score{font-size:52px}
+dl.desc{grid-template-columns:1fr}dl.desc dt{border-bottom:none;padding-bottom:0}.guide{grid-template-columns:1fr}}
+
+ol.tp{margin:0;padding-left:22px} ol.tp li{padding:8px 0;border-bottom:1px solid var(--grid)} ol.tp li div{color:var(--ink2);font-size:14.5px;margin-top:2px}
+ol.tp .ref{font-size:12.5px;color:var(--muted)} .sum{font-size:16px;line-height:1.7;margin-top:18px}
+.tbl table{min-width:0}</style></head><body><div class="wrap">
+<div class="top"><h1>WORLD INDEX · Daily Tip</h1><div class="date">2026-11-28 (토)</div></div>
+<h2>개요</h2>
+<div class="sum">종합지수 <b style="font-size:22px">30.7</b> / 100 · <b style="color:#ec835a">위험</b> · 전일(11.27) 대비 ▲ 0.9 · 백분위 12%<br>
+<span class="small">금요일 코스피는 4.3% 올라 4,916에 마감했고 원/달러 환율은 1,337.9원으로 내렸다. 미국 증시도 단축 거래일에 올라 다우지수는 2022년 이후 가장 좋은 한 주를 보냈다.</span></div>
+<h2>주목 지표 (자동 선정)</h2>
+<div class="tbl"><table><thead><tr><th></th><th>항목</th><th class="num">현재값 (전일 대비, 관측일)</th><th>상태점수</th><th>선정 사유</th></tr></thead><tbody><tr><td class="id">F4</td><td>전세계 주가 고점대비 낙폭 (ACWI)</td><td class="num">-7.32 % (▲1.59%p, 11.27)</td><td><b style="color:#fab219">50</b></td><td>상태점수 +8</td></tr><tr><td class="id">E4</td><td>기대인플레이션 (5Y BEI)</td><td class="num">2.16 % (▲0.03%p, 11.27)</td><td><b style="color:#0ca30c">97</b></td><td>상태점수 +8 · 10년 중 최상위 수준</td></tr><tr><td class="id">K1</td><td>원/달러 환율</td><td class="num">1,333 원 (▼10.1, 11.27)</td><td><b style="color:#fab219">52</b></td><td>상태점수 +6</td></tr><tr><td class="id">F5</td><td>미 10년 실질금리 (TIPS)</td><td class="num">2.73 % (▼0.06%p, 11.25)</td><td><b style="color:#d03b3b">2</b></td><td>10년 중 최하위 수준</td></tr><tr><td class="id">K2</td><td>코스피 고점대비 낙폭</td><td class="num">-46.07 % (▲2.24%p, 11.27)</td><td><b style="color:#d03b3b">0</b></td><td>10년 중 최하위 수준</td></tr><tr><td class="id">E5</td><td>미 신규실업수당청구</td><td class="num">189.0 K (–, 11.21)</td><td><b style="color:#0ca30c">100</b></td><td>10년 중 최상위 수준</td></tr><tr><td class="id">K4</td><td>수출 증가율 (전년동월비)</td><td class="num">84.74 % (–, 09.01)</td><td><b style="color:#0ca30c">100</b></td><td>10년 중 최상위 수준</td></tr></tbody></table></div>
+<div class="small" style="margin-top:6px">선정 기준: 상태점수 전일 대비 ±5 이상 변동, 또는 상태점수 10 이하·95 이상</div>
+<h2>유의 사항</h2><ol class="tp"><li><b>코스피 반등, 증안펀드 기대</b><div>코스피는 26일 4,711에서 27일 4,916으로 4.3% 올랐고 코스닥은 8%대 올랐다. 정부의 증시안정펀드 투입 기대가 반영됐다는 보도가 많다. 다만 이번 주 코스피는 24일 6.3% 상승, 25일 6%대 하락처럼 하루 등락 폭이 컸다. 고점(9,114) 대비로는 여전히 46% 낮다.</div><div class="ref">관련 지표: K2 코스피 고점대비 낙폭</div></li><li><b>환율 1,330원대 후반으로 하락</b><div>원/달러 환율은 4.8원 내린 1,337.9원에 마감했다. 증시 반등과 월말 수출업체 달러 매도가 영향을 줬다는 보도다. 해외 결제 500달러 기준으로 환율이 5원 내리면 원화 청구액은 2,500원 줄어든다.</div><div class="ref">관련 지표: K1 원/달러 환율</div></li><li><b>미국 증시 주간 상승</b><div>추수감사절 다음 날 단축 거래에서 AI 관련주가 대부분 올랐고, 다우지수는 2022년 이후 가장 큰 주간 상승을 기록했다는 보도가 나왔다. 전세계 주가의 고점 대비 낙폭은 −7.3%로 줄었다.</div><div class="ref">관련 지표: F4 전세계 주가 고점대비 낙폭, X4 기술·사이버·기타 돌발</div></li><li><b>호르무즈 해협 재개방 거부</b><div>이란은 해협을 다시 열지 않겠다고 했고, 미군은 봉쇄를 뚫으려던 선박을 무력화했다고 밝혔다. 브렌트유는 배럴당 90.8달러다. 국제 유가는 보통 2~3주 뒤 주유소 가격에 반영된다.</div><div class="ref">관련 지표: E1 국제유가, X1 무력분쟁·안보</div></li><li><b>다음 주 11월 수출 발표</b><div>12월 1일 11월 수출입동향이 나온다. 수출이 전년 대비 두 배로 늘고 무역흑자가 500억 달러를 넘을 것이라는 설문 결과가 있다(연합인포맥스 설문 기준). 반도체 수출이 다시 확인되는 자리다.</div><div class="ref">관련 지표: K4 수출 증가율</div></li></ol>
+<h2>주요 일정</h2><div class="tbl"><table><thead><tr><th>일자</th><th>일정</th><th>비고</th></tr></thead><tbody><tr><td class="obs" style="font-size:13.5px;color:#111">12/1(화)</td><td>11월 수출입동향 발표(산업통상자원부)</td><td class="note">수출 두 배 증가 전망(설문 기준)</td></tr><tr><td class="obs" style="font-size:13.5px;color:#111">다음 주</td><td>정부 증시안정펀드 투입 여부</td><td class="note">보도 기준</td></tr></tbody></table></div>
+<h2>점검·준비 사항</h2><ol class="tp"><li><b>블랙프라이데이 카드 청구액</b><div>해외 결제는 카드사 매입 시점 환율로 청구된다. 다음 주 카드 앱에서 원화 확정 금액을 확인한다. 300달러 결제라면 환율 10원 차이에 3,000원이 달라진다.</div></li><li><b>대출 금리 변동일</b><div>기준금리가 3.00→3.25%로 올랐다. 변동금리 대출이 있으면 은행 앱에서 다음 금리 변동일을 확인해 둔다. 대출 1억 원 기준 한 달 이자 증가분은 약 2만 1천 원이다(인상분 전액 반영 가정).</div></li><li><b>주말 계좌 점검</b><div>이번 주 코스피는 하루 4~6%대로 네 차례 크게 움직였다. 연금·펀드 계좌의 주식 비중이 처음 정한 비율에서 얼마나 벗어났는지 확인한다(매매 권유 아님).</div></li></ol>
+<div class="foot">작성 기준: 2026-11-28 WORLD INDEX(수집 2026-11-28 07:16 KST) 및 최근 48시간 보도. 일정은 보도 기준이며 변경될 수 있음.<br>
+정보 제공 목적이며 투자 권유가 아님. 개별 금융상품의 매수·매도 판단 근거로 사용하지 않음.</div>
+</div></body></html>
